@@ -25,7 +25,7 @@ public class hanoiClass {
 		System.out.println("移動する枚数を入力");
 		//board = InputStream();
 		
-		
+		//確認用
 		System.out.println("移動前確認：" + before);
 		System.out.println("移動後確認：" + after);
 		System.out.println("移動枚数確認：" + board);

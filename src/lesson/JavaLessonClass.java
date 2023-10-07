@@ -90,6 +90,7 @@ public class JavaLessonClass {  //クラス宣言
 		     
 		     
 		     
+		     
 		     //if式  条件分け
 		     int x = 2;
 		     if(x == 1) {
