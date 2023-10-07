@@ -1,16 +1,12 @@
 package java_labo;
 
+import java.util.Scanner;
+
 public class hanoiClass {
 
 	public static void main(String[] args) {
 		//ハノイの塔攻略　塔が三本を前提とする
-		
-		//定義
 		String[] tower = {"A","B","C"};
-		String before = "B";
-		String after = "C";
-		int board = 8;
-		
 		
 		
 		//開始
@@ -18,12 +14,16 @@ public class hanoiClass {
 		System.out.println("ここでは塔を左からA、B、Cと表記する");
 		
 		//入力
-		System.out.println("移動前の塔を入力");
-		//before = InputStream();
-		System.out.println("移動先の塔を入力");
-		//after = InputStream();
-		System.out.println("移動する枚数を入力");
-		//board = InputStream();
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("移動前の塔を英大文字で入力");
+		String before = scan.nextLine();
+		
+		System.out.println("移動先の塔を英大文字で入力");
+		String after = scan.nextLine();
+		
+		System.out.println("移動する枚数を数字で入力");
+		int board = scan.nextInt();
 		
 		//確認用
 		System.out.println("移動前確認：" + before);
@@ -87,11 +87,7 @@ public class hanoiClass {
 		//実行手数と最小理論値を比較
 		System.out.println("最小理論値は" + ideal + "手");
 		System.out.println("提示された手順は合計" + "" + "手");
-		
-		//確認用
-		System.out.print("," + before);
-		System.out.print("," + after);
-		System.out.println("," + board);
+
 	}
 
 }
